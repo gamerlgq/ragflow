@@ -61,6 +61,17 @@ Elasticsearch 需要 `vm.max_map_count` ≥ 262144。
    cd docker && ./start_ragflow.sh
    ```
 
+### 推送到你的 Fork（gamerlgq/ragflow）
+
+远程 `myfork` 已指向 https://github.com/gamerlgq/ragflow.git。在终端执行：
+
+   ```bash
+   cd /path/to/ragflow
+   git push -u myfork main
+   ```
+
+若使用 SSH：`git remote set-url myfork git@github.com:gamerlgq/ragflow.git` 后再 `git push -u myfork main`。
+
 4. **确认 RAGFlow 与 MCP 已就绪**
    ```bash
    docker logs -f docker-ragflow-cpu-1
